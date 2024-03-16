@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-xx3hhyVgWHquvzD7nyq3LP5dlsb5lJ9dktv/VZT/IDb8cvePue0Gi0aNk8gP49S5g0JWtL0xL/6MjguPRLM2PQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom styles */
+        .bg-hero {
+            background-image: url('https://images.unsplash.com/photo-1573164713985-f4f3d1a26629');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-accent {
+            background-color: #1E40AF;
+        }
+
+        .border-accent {
+            border-color: #1E40AF;
+        }
+
+        .btn-primary {
+            background-color: #1E40AF;
+        }
+
+        .btn-primary:hover {
+            background-color: #1A365D;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-lg font-semibold">Education Hub Blog</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+                <li><a href="#featured" class="hover:text-blue-300">Featured Articles</a></li>
+                <li><a href="#category" class="hover:text-blue-300">Categories</a></li>
+                <li><a href="#recent" class="hover:text-blue-300">Recent Posts</a></li>
+                <li><a href="#newsletter" class="hover:text-blue-300">Newsletter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-hero bg-cover bg-center py-32 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-red mb-4">Welcome to <br> Education Hub Blog</h1>
+            <p class="text-lg text-red opacity-75">Explore articles, tips, and resources to enhance your learning
+                experience.</p>
+            <a href="#featured"
+                class="inline-block mt-8 px-8 py-4 bg-accent text-white font-semibold rounded-full shadow-lg hover:bg-opacity-75 transition duration-300">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section id="featured" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">Featured Articles</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Featured Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200">
+                    <img src="https://www.valamis.com/wp-content/uploads/2022/09/life-long-learning.png" alt="Featured Post 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">The Importance of Lifelong Learning</h3>
+                        <p class="text-gray-600">Discover why lifelong learning is crucial for personal and professional growth.</p>
+                        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.valamis.com%2Fhub%2Flifelong-learning&psig=AOvVaw0_pKcUjaTDBSc1ouVTLPYM&ust=1710686683248000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCMDMs9uC-YQDFQAAAAAdAAAAABAD" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Featured Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200">
+                    <img src="https://assets-global.website-files.com/644f9103afe8ee356a093d6f/652de6ed9df10b37d4c6f4de_Study%20tehcniques.png" alt="Featured Post 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Effective Study Techniques
+                        </h3>
+                        <p class="text-gray-600">Learn proven strategies to enhance your study habits and improve retention.</p>
+                        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apextuitionaustralia.com%2Four-blog%2Fstudy-techniques-for-high-school-students-who-want-to-succeed&psig=AOvVaw1SEdSQZc6lttIM4L_NG6Yc&ust=1710686733335000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCODk-s-D-YQDFQAAAAAdAAAAABAD" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Featured Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200">
+                    <img src="https://www.fipp.com/wp-content/uploads/2020/06/d373ae6a-95ff-4fe9-a9ad-cafbbc4f35e0.jpg" alt="Featured Post 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Navigating Online Learning Platforms
+                        </h3>
+                        <p class="text-gray-600">Tips and tricks for making the most out of online learning platforms.</p>
+                        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fipp.com%2Fnews%2Fonline-learning-trends-challenges-and-the-consumers-fueling-it%2F&psig=AOvVaw0itZGaKZDJ9aGY9FNO-RHM&ust=1710686859718000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCIDlqaiD-YQDFQAAAAAdAAAAABAZ" class="block mt-4 text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section id="category" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">Categories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 p-6">
+                    <h3 class="text-xl font-semibold mb-2">Programming</h3>
+                    <p class="text-gray-600">Explore programming languages, coding techniques, and software development.</p>
+                </div>
+                <!-- Category 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 p-6">
+                    <h3 class="text-xl font-semibold mb-2">Science</h3>
+                    <p class="text-gray-600">Discover scientific theories, experiments, and breakthroughs in various fields of science.</p>
+                </div>
+                <!-- Category 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 p-6">
+                    <h3 class="text-xl font-semibold mb-2">Education Trends</h3>
+                    <p class="text-gray-600">Stay updated on the latest trends, innovations, and challenges in education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section id="recent" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">Recent Posts</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <!-- Recent Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 p-6">
+                    <h3 class="text-xl font-semibold mb-2">Exploring Artificial Intelligence: A Beginner's Guide</h3>
+                    <p class="text-gray-600">Publication Date: March 10, 2024</p>
+                </div>
+                <!-- Recent Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 p-6">
+                    <h3 class="text-xl font-semibold mb-2">The Future of Online Learning: Trends and Challenges</h3>
+                    <p class="text-gray-600">Publication Date: March 5, 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">Subscribe to Our Newsletter</h2>
+            <form class="max-w-md mx-auto">
+                <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                        type="email" placeholder="Your Email Address" aria-label="Your Email Address">
+                    <button
+                        class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
+                        type="button">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <h3 class="text-xl font-semibold">Connect with Us</h3>
+                <ul class="flex space-x-4 mt-4">
+                    <li><a href="#" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <p>&copy; 2024 Education Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
